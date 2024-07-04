@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Deposit Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Deposit</h1>
+        <p>
+            Enter the amount to deposit below:
+        </p>
+        <form action="ControllerServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>Deposit amount:</td>
+                    <td><input type="text" name="amt" required=""/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="hidden" name="op" value="deposit"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="DEPOSIT"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
